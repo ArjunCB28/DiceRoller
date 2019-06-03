@@ -23,7 +23,9 @@
     <ListView
         android:id="@+id/dice_list_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="479dp"
+        android:layout_weight="2"
+        >
 
     </ListView>
 
