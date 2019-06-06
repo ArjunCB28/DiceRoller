@@ -1,49 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/wood"
     android:orientation="vertical">
 
-    <LinearLayout
+    <GridView
+        android:id="@+id/dice_list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:orientation="horizontal"
-        android:gravity="center">
-
-        <ImageView
-            android:id="@+id/dice_image"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:src="@drawable/dice1"
-            android:padding="5dp"/>
-    </LinearLayout>
-
-    <ListView
-        android:id="@+id/dice_list_view"
-        android:layout_width="match_parent"
-        android:layout_height="479dp"
+        android:layout_marginBottom="150dp"
         android:layout_weight="2"
-        >
+        android:columnWidth="100dp"
+        android:numColumns="2">
 
-    </ListView>
+    </GridView>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center|bottom">
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true">
 
-        <Button
+        <ImageView
             android:id="@+id/roll_dice_button"
-            android:layout_width="match_parent"
-            android:layout_height="100dp"
-            android:text="@string/roll_dice"
-            android:background="@color/rollButtonColor"
-            android:textColor="@color/whiteText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:padding="10dp"
+            android:src="@drawable/ic_dice" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
             android:textStyle="bold"
-            android:textSize="25dp"/>
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/add_dice"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.5"
+                android:padding="20dp"
+                android:src="@drawable/ic_add_icon" />
+
+            <ImageView
+                android:id="@+id/remove_dice"
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.5"
+                android:padding="20dp"
+                android:src="@drawable/ic_minus_icon" />
+        </LinearLayout>
 
     </LinearLayout>
 
