@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -25,7 +26,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener {
     public final Random randomVariable = new Random();
-    private ImageView rollDice;
+    private Button rollDice;
     private SensorManager sensorManager;
     private Sensor accelerometer;
     private final String TAG = "MainActivity";

@@ -23,13 +23,22 @@
         android:layout_height="120dp"
         android:layout_alignParentBottom="true">
 
-        <ImageView
+        <!--<ImageView-->
+            <!--android:id="@+id/roll_dice_button"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="0.5"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/ic_dice" />-->
+
+        <Button
             android:id="@+id/roll_dice_button"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="100dp"
             android:layout_weight="0.5"
             android:padding="10dp"
-            android:src="@drawable/ic_dice" />
+            android:text="@string/roll_dice"
+            android:background="@color/greyText"/>
 
         <LinearLayout
             android:layout_width="0dp"

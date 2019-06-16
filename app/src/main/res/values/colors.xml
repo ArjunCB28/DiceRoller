@@ -6,4 +6,5 @@
     <color name="colorAccent">#D81B60</color>
     <color name="rollButtonColor">#3F51B5</color>
     <color name="whiteText">#FFFFFF</color>
+    <color name="greyText">#A4FFFFFF</color>
 </resources>
